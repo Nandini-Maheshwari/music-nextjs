@@ -16,6 +16,8 @@ interface Course{
 }
 
 export default function FeaturedCourses() {
+  //course <- parameter representing each individual element of the "courseData.courses" array 
+  //Course <- data type kinda
   const featuredCourses = courseData.courses.filter((course:Course) => course.isFeatured)
 
   return (
